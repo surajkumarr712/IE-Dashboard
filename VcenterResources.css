@@ -1,0 +1,227 @@
+/* Table Styles */
+.datastore-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* To clip the rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+}
+ 
+.datastore-table th,
+.datastore-table td {
+    padding: 12px 15px;
+    /* Padding for cells */
+    text-align: left;
+    /* Align text to the left */
+}
+ 
+/* Header Styles */
+.datastore-table th {
+    background-color: #4CAF50;
+    /* Green background for header */
+    color: white;
+    /* White text color */
+    font-weight: bold;
+    /* Bold text */
+}
+ 
+/* Cell Styles */
+.datastore-table td {
+    background-color: #f9f9f9;
+    /* Light grey background for cells */
+    border-bottom: 1px solid #ddd;
+    /* Bottom border for cells */
+}
+ 
+/* Hover Effect on Rows */
+.datastore-table tr:hover {
+    background-color: #e2f7e2;
+    /* Light green background on hover */
+}
+ 
+/* Percentage Bar Styles */
+.datastore-table .percentage-bar {
+    height: 20px;
+    /* Height of the percentage bar */
+    border-radius: 5px;
+    /* Rounded corners for the bar */
+}
+ 
+/* Text Color for Percentage Bar */
+.datastore-table .percentage-bar-text {
+    color: #fff;
+    /* White text color inside the bar */
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+.vcenter-resources-container {
+    width: 100%;
+    /* Full width */
+    padding: 20px;
+    /* Add some padding */
+    box-sizing: border-box;
+    /* Include padding in width calculation */
+}
+ 
+.cluster-row-container {
+    background-color: #f0f0f0;
+    /* Light background color for cluster row */
+    padding: 10px;
+    /* Padding inside the cluster row container */
+    border-radius: 8px;
+    /* Rounded corners */
+    margin-bottom: 20px;
+    /* Space below the cluster row */
+}
+ 
+.cluster-row {
+    display: flex;
+    justify-content: space-around;
+    /* Distribute space evenly */
+}
+ 
+.cluster-row span {
+    display: inline-block;
+    /* Allow transformation effects */
+    padding: 10px;
+    /* Add some padding */
+    transition: transform 0.3s ease;
+    /* Smooth transition for scaling */
+    cursor: pointer;
+}
+ 
+/* Hover effect for cluster names */
+.cluster-row span:hover {
+    transform: translateY(-5px);
+    /* Move up slightly on hover */
+}
+ 
+.vcenter-resources {
+    background-color: #f9f9f9;
+    /* Light background color for the main box */
+    border-radius: 8px;
+    /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    padding: 20px;
+    /* Padding inside the box */
+}
+ 
+ 
+.notification-button-wrapper {
+    position: fixed; /* Fixes the button to the right side of the page */
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000;
+}
+ 
+.notification-button {
+    padding: 10px; /* Adjust padding as needed */
+    background-color: transparent; /* Make background transparent */
+    border: none; /* Remove border */
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+ 
+.notification-button:hover {
+    transform: scale(1.1); /* Slightly enlarge the button on hover */
+}
+ 
+.notification-button i { /* Style for the icon */
+    font-size: 24px; /* Adjust size as needed */
+    color: #007bff; /* Change color to match your theme */
+}
+ 
+.notification-button:hover i { /* Change color on hover */
+    color: #0056b3; /* Darker shade on hover */
+}
+ 
+.notification-container {
+    position: absolute; /* Position it absolutely relative to its parent */
+    right: calc(100% + 4px); /* Align it to the left of the button with some margin */
+    top: calc(100% + -7px); /* Position it just below the button with some margin */
+    background-color: white; /* Background color of the notification box */
+    border-radius: 8px; /* Slightly larger rounded corners for a softer look */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Softer shadow effect for depth */
+    padding: 15px; /* Padding inside the container */
+    width: 340px; /* Set a fixed width for consistency */
+    max-height: 400px; /* Limit height to prevent overflow */
+    overflow-y: auto; /* Allow scrolling if content exceeds max height */
+}
+ 
+.notification-container h3 {
+    margin-top: 0; /* Remove top margin from heading */
+    font-size: 18px; /* Increase font size for better readability */
+}
+ 
+.notification-container ul {
+    list-style-type: none; /* Remove default list styling */
+    padding-left: 0; /* Remove left padding */
+}
+ 
+.notification-container li {
+    padding: 10px; /* Padding for each notification item */
+    border-bottom: 1px solid #e0e0e0; /* Add a bottom border for separation */
+}
+ 
+.notification-container li:last-child {
+    border-bottom: none; /* Remove bottom border for the last item */
+}
+ 
+/* Optional styles for no notifications message */
+.notification-container p {
+    margin-top: 10px;
+    font-style: Arial;
+}
+ 
+.notification-item:not(:last-child) {
+    border-bottom: 1px solid #e0e0e0; /* Light gray line for separation */
+}
+ 
+ 
+.send-email-alert {
+    margin-top: 5px; /* Space above the text */
+    font-size: 12px; /* Smaller font size */
+    color: #007bff; /* Color to match your theme */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+ 
+.send-email-alert i {
+    margin-left: 5px; /* Space between text and icon */
+}
+.send-email-alert:hover {
+    text-decoration: underline; /* Underline on hover for better visibility */
+}
+ 
+ 
+/* Style for the orange dot */
+.notification-dot {
+    position: absolute; /* Position it absolutely relative to the button */
+    top: 1px; /* Adjust to position above the button */
+    right: 2px; /* Adjust to position at the right edge of the button */
+    width: 10px; /* Width of the dot */
+    height: 10px; /* Height of the dot */
+    background-color: rgb(245, 169, 27); /* Color of the dot */
+    border-radius: 50%; /* Make it circular */
+}
+ 
+ 
+.progress-container {
+    display: flex;
+    justify-content: space-around; /* Space items evenly */
+}
+ 
+.progress-item {
+    width: 150px; /* Set a fixed width for each progress item */
+}
+ 

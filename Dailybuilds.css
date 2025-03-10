@@ -1,0 +1,107 @@
+/* DailyBuilds.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light background color for better contrast */
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #333; /* Dark color for headings */
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100px; /* Set a fixed width for the input */
+    
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #00698f; /* Primary button color */
+    color: white; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #005f7f; /* Darker shade on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Remove gaps between table cells */
+    margin-top: 20px;
+    background-color: white; /* White background for the table */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+th, td {
+    padding: 12px; /* Add padding for table cells */
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd; /* Light border for rows */
+}
+
+th {
+    background-color: #f2f2f2; /* Light gray background for headers */
+    color: #333; /* Dark text color for headers */
+}
+
+tr:hover {
+    background-color: #f9f9f9; /* Highlight row on hover */
+}
+
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between; /* Space between buttons */
+}
+
+.pagination button {
+    padding: 10px 15px;
+    background-color: #00698f; /* Same color as the main buttons */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+    background-color: #005f7f; /* Darker shade on hover */
+}
+
+.pagination button:disabled {
+    background-color: #ccc; /* Gray color for disabled buttons */
+    cursor: not-allowed; /* Change cursor for disabled buttons */
+}
+
+.filter-options-dropdown::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+.filter-options-dropdown {
+    position: absolute; /* Keep this to position it correctly */
+    background-color: white; /* Background color */
+    border: 1px solid #ccc; /* Border */
+    z-index: 1000; /* Ensure it's on top of other elements */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    scrollbar-width: none; /* For Firefox */
+    width: 200px; /* Set a width */
+    max-height: 150px; /* Set a max height to prevent overflow */
+    overflow-y: auto; /* Allow scrolling if content exceeds max height */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+}
+
+
+.calendar-popup {
+    position: absolute;
+    z-index: 1000; /* Ensure it appears above other elements */
+    margin-top: -10px; /* Adjust as necessary to position correctly */
+}

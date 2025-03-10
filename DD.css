@@ -1,0 +1,107 @@
+/* DD.css */
+ 
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-bottom: 2px solid #e9ecef;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+ 
+h1 {
+  font-size: 24px;
+  color: #292b2c;
+  font-weight: bold;
+  margin: 0;
+}
+ 
+.change-view-button {
+  padding: 10px 15px;
+  background-color: #525354dc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+ 
+.change-view-button:hover {
+  background-color: #0056b3;
+}
+ 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+ 
+th, td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+ 
+th {
+  background-color: #073857;
+  color: white;
+  font-weight: bold;
+}
+ 
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+ 
+tr:hover {
+  background-color: #e9ecef;
+  cursor: pointer;
+}
+ 
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+ 
+.pagination-controls button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  border: none;
+  background-color: #073857;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+ 
+.pagination-controls button:hover {
+  background-color: #0056b3;
+}
+ 
+.pagination-controls button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+ 
+ 
+.summary-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 20px; /* Adds space between the items */
+}
+
+.summary-item {
+  flex: 1; /* Each item will take equal space */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

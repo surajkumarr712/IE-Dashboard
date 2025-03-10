@@ -1,0 +1,34 @@
+.topbar {
+  background-color: #f8f9fa; /* Light background color */
+  padding: 10px;
+}
+
+.topbar ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+  display: flex; /* Use flexbox for horizontal layout */
+}
+
+.topbar li {
+  margin-right: 20px; /* Spacing between items */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.topbar li:last-child {
+  margin-right: 0; /* Remove margin from the last item */
+}
+
+.topbar li:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.topbar a {
+  text-decoration: none; /* Remove underline */
+  color: #000; /* Change link color to black for better visibility */
+  font-weight: bold; /* Bold font for links */
+}
+
+.topbar a:hover {
+  color: #007bff; /* Change color on hover for better interactivity */
+}

@@ -1,0 +1,224 @@
+.navbar {
+  background-color: #2F63A0;
+  padding: 1em;
+  width: 260px; /* Default width for open state */
+  height: 220vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 5px #062A74;
+  transition: width 0.3s ease; /* Smooth transition for width */
+  overflow: hidden; /* Hide overflow content when closed */
+}
+
+.toggle-icon {
+  display: inline-block;
+  width: 40px; /* Adjust the width as needed */
+  text-align: end; /* Center the icon within the span */
+}
+
+.navbar:not(.open) {
+  width: 60px; /* Collapsed width for closed state */
+}
+
+.dashboard-title {
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  display: block; /* Show title by default */
+}
+
+.navbar:not(.open) .dashboard-title {
+  display: none; /* Hide title when navbar is closed */
+}
+
+.dashboard-title h1 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  display: block;
+  margin-bottom: 10px; /* Consistent spacing */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.navbar li a,
+.navbar li div {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  border: 2px solid transparent;
+}
+
+.navbar li a:hover,
+.navbar li div:hover {
+  color: #202020;
+  background-color: #ffffff80;
+}
+
+.navbar li.active a,
+.navbar li:active a {
+  text-decoration: none;
+  color: #121212;
+}
+
+.navbar li {
+  display: flex;
+  align-items: center; /* Aligns icons and text vertically */
+  margin: 10px 0; /* Adds space between items */
+}
+
+.navbar li a,
+.navbar li div {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
+  cursor: pointer; /* Change cursor to hand on hover */
+}
+
+.navbar li a svg,
+.navbar li div svg {
+  margin-right: 8px; /* Space between icon and text */
+}
+
+.navbar:not(.open) li span {
+  display: none; /* Hide text when navbar is closed */
+}
+
+.navbar:not(.open) li {
+  display: flex;
+  justify-content: center; /* Center icons when navbar is closed */
+}
+
+.navbar li ul {
+  list-style: none;
+  padding-left: 20px; /* Add indentation for dropdown items */
+  display: none; /* Default to hidden */
+  margin-left: 20px; /* Add indentation between li and ul */
+}
+
+.navbar li ul.show {
+  display: block; /* Show the dropdown */
+}
+
+.navbar li ul li {
+  margin-bottom: 10px; /* Adjust spacing as needed */
+  padding-left: 40px; /* Add indentation for dropdown items */
+}
+
+.navbar li ul li ul {
+  margin-left: 40px; /* Add indentation for sub-dropdown items */
+}
+
+.navbar li ul li ul li {
+  padding-left: 60px; /* Add indentation for sub-dropdown items */
+}
+
+.navbar-toggle {
+  background: #2F63A0;
+  border: none;
+  color: #ffffff;
+  font-size: 24px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  margin-left: 270px; /* Adjust for open navbar width */
+  padding: 50px;
+  height: 130vh;
+  flex-grow: 1;
+  color: black;
+  transition: margin-left 0.3s ease; /* Smooth transition for content */
+}
+
+.navbar:not(.open) ~ .content {
+  margin-left: 70px; /* Adjust for closed navbar width */
+}
+
+.chart-container {
+  width: 100%;
+  max-width: 600px; /* Adjust as necessary */
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+}
+
+.chart {
+  flex-grow: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.charts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 60px; /* Adjust based on your navbar height */
+  left: 60px; /* Adjust based on your closed navbar width */
+  background-color: #2F63A0;
+  padding: 1em;
+  width: 200px;
+  box-shadow: 0 0 5px #062A74;
+  z-index: 1000; /* Ensure it overlaps other content */
+}
+
+.dropdown ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  margin-bottom: 10px;
+}
+
+.dropdown li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown li a:hover {
+  color: #202020;
+  background-color: #ffffff80;
+}
